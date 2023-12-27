@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function image_picker(){
+            const daftar_gambar = ["boboiboy.jpg", "fang.jpg", "Ying.png", "Yaya.png", "Gopal.png", "Ochobot.png", "Boboiboy Galaxy.jpg"];
+            let pilihan = document.getElementById("option").value;
+            if( pilihan == "boboiboy"){
+                let select = daftar_gambar[0];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "fang"){
+                let select = daftar_gambar[1];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "ying"){
+                let select = daftar_gambar[2];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "yaya"){
+                let select = daftar_gambar[3];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "gopal"){
+                let select = daftar_gambar[4];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "ochobot"){
+                let select = daftar_gambar[5];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+            if( pilihan == "boboiboygalaxy"){
+                let select = daftar_gambar[6];
+                document.getElementById("gambar").src = `images/${select}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <select name="" id="option" onchange="image_picker()">
+        <option value="">Pilih Gambar :</option>
+        <option value="boboiboy">Boboiboy</option>
+        <option value="fang">Fang</option>
+        <option value="ying">Ying</option>
+        <option value="yaya">Yaya</option>
+        <option value="gopal">Gopal</option>
+        <option value="ochobot">Ochobot</option>
+        <option value="boboiboygalaxy">Boboiboy Galaxy</option>
+    </select>
+    <div class="container">
+        <img id="gambar" width="500px"> 
+    </div>
+</body>
+</html>
